@@ -1,0 +1,38 @@
+// Core
+@import "../../core/bootstrap/functions";
+@import "../../core/brand/variables";
+
+// Mixins
+@import "../../core/bootstrap/mixins";
+
+@import '../../core/bootstrap/buttons';
+
+// Hero
+.landingHero {
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// Section Titles
+.section--Separator, .section--Features {
+  padding-top: 6rem;
+}
+.section--gray {
+  margin-top: 96px;
+  background: rgb(239, 241, 242);
+}
+.section--gray + .section--gray {
+  margin-top: 0px;
+  padding-bottom: 96px;
+}
+
+
+// Utilities
+.no-mt {
+  margin-top: 0px;
+}
