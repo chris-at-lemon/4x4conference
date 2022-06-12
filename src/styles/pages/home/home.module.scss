@@ -19,7 +19,7 @@
 
 
 // Section Titles
-.section--Separator, .section--Features {
+.section--Separator, .section--Features, .section--summary, .section--parallax-pt {
   padding-top: 6rem;
 }
 .section--gray {
@@ -30,9 +30,70 @@
   margin-top: 0px;
   padding-bottom: 96px;
 }
+.summmaryTitle {
+  color: rgb(0, 123, 255);
+  font-weight: bold;
+  letter-spacing: .1rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
 
+// Parallax countdown
+.countdown-container {
+  background-image:  url(https://ik.imagekit.io/vcqe1lhbs/4x4/cities/frankfurt_2Pz6Zl-Xi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 96px 0px 120px;
+}
+.remainTime {
+  font-family: Barlow, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+.toLocation {
+  font-family: Barlow, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 4rem;
+}
+.countDownWrapper {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+
+// Icons
+.inlineIcon {
+  display: inline-block;
+  height: 1.4rem;
+  width: auto;
+  margin-right: .5rem;
+  margin-top: -.25rem;
+}
 
 // Utilities
 .no-mt {
   margin-top: 0px;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Img utilities
+.imgResponsive {
+  width: 100%;
+  height: auto;
 }

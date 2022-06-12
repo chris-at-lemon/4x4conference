@@ -1,0 +1,58 @@
+// Core
+@import "../../core/bootstrap/functions";
+@import "../../core/brand/variables";
+
+// Mixins
+@import "../../core/bootstrap/mixins";
+
+// Timer
+
+.interval {
+  flex: 1 1 0%;
+}
+.interval__value {
+  font-family: Barlow, sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    font-size: 6rem;
+  }
+}
+.interval__key {
+  font-family: Barlow, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: white;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+  }
+}
+
+// Utilities
+.mb-0 {
+    margin-bottom: 0;
+}
+.mb-1rem {
+    margin-bottom: 1rem;
+}
+.mt-1rem {
+    margin-top: 1rem;
+}
+.d-block {
+    display: block;
+}
+.w-100 {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
