@@ -141,6 +141,57 @@ const Home: NextPage = () => {
             </div>
         </section>
 
+        <section id="events" className={`${styles['section--Separator']} ${styles['section--gray']} ${styles['no-mt']}`}>
+            <TitleSection
+                img={Map}
+                title="4x4 Roadshow Events"
+                subtitle="Melden Sie sich bei einem unserer Events an"
+            />
+        </section> {/* -- /. Cities Intro --*/}
+
+        <section className="section--Features section--gray">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-3">
+                        <Feature
+                            imgSrc="https://source.unsplash.com/plR1p4gIzA8/480x360"
+                            title="Hamburg"
+                            body= "29.9.2021"
+                            link= "/location/hamburg"
+                            ftrBtnTxt="Anmelden"
+                        />
+                    </div>
+                    <div className="col-md-3">
+                        <Feature
+                            imgSrc="https://source.unsplash.com/WT02K6mFy_I/480x360"
+                            title="Düsseldorf"
+                            body= "7.10.2021"
+                            link= "/location/dusseldorf"
+                            ftrBtnTxt="Anmelden"
+                        />
+                    </div>
+                    <div className="col-md-3">
+                        <Feature
+                            imgSrc="https://source.unsplash.com/j17g8hL-u7I/480x360"
+                            title="Frankfurt"
+                            body= "28.9.2021"
+                            link= "/location/frankfurt"
+                            ftrBtnTxt="Anmelden"
+                        />
+                    </div>
+                    <div className="col-md-3">
+                        <Feature
+                            imgSrc="https://source.unsplash.com/O3OIWMYbGQU/480x360"
+                            title="München"
+                            body= "6.10.2021"
+                            link= "/location/munchen"
+                            ftrBtnTxt="Anmelden"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section> {/*-- /. Features cities --*/}
+
     </>
   )
 }
