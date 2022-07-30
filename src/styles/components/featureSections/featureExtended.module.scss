@@ -7,7 +7,7 @@
 @import "../../core/bootstrap/buttons";
 
 .features {
-  text-align: center;
+  text-align: left;
   height: 100%;
 }
 
@@ -58,9 +58,9 @@
 
 .feature__title {
   font-size: 1.2rem;
+  min-height: 3.3rem;
   font-weight: 700;
   padding: 0;
-  margin-bottom: 0.25rem;
 }
 
 .feature__text {

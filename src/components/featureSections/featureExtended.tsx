@@ -2,9 +2,9 @@ import React from "react";
 
 import { IFeatureElement } from "../../interfaces/components/featureSections/featured";
 
-import styles from "../../styles/components/featureSections/featured.module.scss";
+import styles from "../../styles/components/featureSections/featureExtended.module.scss";
 
-export const Featured = (props: IFeatureElement) => (
+export const FeatureExtended = (props: IFeatureElement) => (
   <div className={`${styles["features"]}`}>
     <div className={`${styles["feature"]}`}>
       <div className={`${styles["imgWrapper"]}`}>
