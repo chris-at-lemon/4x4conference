@@ -8,7 +8,7 @@ async function sendEmail(req, res) {
     await sendgrid.send({
       to: "cherrmann@lemon-digital.com", // Your email where you'll receive emails
       from: "info@thematicsontour.com", // your website email address here
-      subject: "testing sendgrid google verif",
+      subject: "some more testing sendgrid google verif",
       html: `<div>You've got a mail from sendgrid</div>`,
     });
   } catch (error) {
