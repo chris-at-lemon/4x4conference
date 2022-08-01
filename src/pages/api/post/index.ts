@@ -1,7 +1,7 @@
 import prisma from "../../../../lib/prisma";
 
 export default async function handlePost(req: any, res: any) {
-  const { company, conferenceId, conferenceLDate, conferenceLocation, conferenceSignUpDate, conferenceSignUpTimestamp, name, surname, email, message } = req.body;
+  const { company, conferenceId, conferenceLDate, conferenceLocation, conferenceSignUpDate, conferenceSignUpTimestamp, name, surname, mail, message } = req.body;
   console.log(req.body);
 
   const result = await prisma.user.create({
@@ -14,7 +14,7 @@ export default async function handlePost(req: any, res: any) {
       conferenceSignUpTimestamp: conferenceSignUpTimestamp,
       name: name,
       surname: surname,
-      email: email,
+      mail: mail,
       message: message,
     },
   });

@@ -1,0 +1,29 @@
+import styled from 'styled-components';
+import { colors } from '@gocogroup/frontend-stack/src/variables';
+
+export const ScrollBackStyled = styled.div`
+    & .scrollBackWrapper.scrollAtTop, .scrollBackWrapper.scrollDefault {
+        opacity: 0;
+    }
+    
+    @media (max-width: 991px) {
+      .scrollBackWrapper {
+        opacity: 0;
+      }
+    }
+  
+    & .scrollBackWrapper {
+         position: fixed;
+         top: 50%;
+         right: 0;
+         background: #fff;
+         text-align: center;
+         cursor: pointer;
+         transform: none;
+         transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+           
+       & img {
+           padding: 1rem;
+       }
+    }
+`;

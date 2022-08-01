@@ -20,6 +20,6 @@ model User {
   conferenceSignUpTimestamp     String?
   name                          String?
   surname                       String?
-  email                         String?
+  mail                          String?
   message                       String?
 }

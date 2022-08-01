@@ -11,16 +11,16 @@ const CreateUser: NextPage = () => {
     conferenceSignUpTimestamp: "1595874913776",
     name: "Christoph",
     surname: "Herrmann",
-    email: "info@lemon-digital.com",
+    mail: "info@lemon-digital.com",
     message: "wir sind am strand",
   };
 
-  const { company, conferenceId, conferenceLDate, conferenceLocation, conferenceSignUpDate, conferenceSignUpTimestamp, name, surname, email, message } = user;
+  const { company, conferenceId, conferenceLDate, conferenceLocation, conferenceSignUpDate, conferenceSignUpTimestamp, name, surname, mail, message } = user;
 
   const submitData = async (e: React.SyntheticEvent) => {
     e.preventDefault();
     try {
-      const body = { company, conferenceId, conferenceLDate, conferenceLocation, conferenceSignUpDate, conferenceSignUpTimestamp, name, surname, email, message };
+      const body = { company, conferenceId, conferenceLDate, conferenceLocation, conferenceSignUpDate, conferenceSignUpTimestamp, name, surname, mail, message };
       await fetch("./api/post", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
